@@ -12,7 +12,7 @@
   <h3 align="center">permasense-corrosion-app-example</h3>
 
   <p align="center">
-    Angular Application Example
+    Angular Application Example (Stage 2021)
     <br />
     <a href="https://github.com/thibaultcrn1/permasense-corrosion-app-example">Voir la démo</a>
     ·
