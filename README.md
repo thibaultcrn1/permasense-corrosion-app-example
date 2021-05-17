@@ -36,11 +36,7 @@
    ```sh
    git clone https://github.com/thibaultcrn1/permasense-corrosion-app-example.git
    ```
-2. Installer les packages NPM (Uniquement si vous supprimez le dossier ./node_modules/).
-   ```sh
-   npm install express express-session mongoose connect-mongo@3 dotenv passport passport-discord
-   ```
-3. Démarrer le script start.
+2. Démarrer le script start.
    ```sh
    npm run start
    ```
