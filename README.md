@@ -36,7 +36,16 @@
    ```sh
    git clone https://github.com/thibaultcrn1/permasense-corrosion-app-example.git
    ```
-2. Démarrer le script start.
+2. Installer Angular/cli.
+   ```sh
+   npm i -g @angular/cli
+   ```
+3. Installer les dépendance.
+   ```sh
+   npm i --s @angular/animations @angular/common @angular/compiler @angular/core @angular/forms @angular/platform-browser @angular/platform-browser-dynamic @angular/router rxjs tslib zone.js
+   npm i --s @angular-devkit/build-angular @angular/cli @angular/compiler-cli @types/jasmine @types/node jasmine-core karma karma-chrome-launcher karma-coverage karma-jasmine karma-jasmine-html-reporter typescript
+   ```
+4. Démarrer l'app.
    ```sh
    npm run start
    ```
@@ -77,37 +86,3 @@ Distribué sous la licence MIT. Voir `LICENSE` pour plus d'informations.
 Thibault - [@thibaultcrn1](https://github.com/thibaultcrn1) - tcarron6@outlook.com
 
 Lien du projet: [https://github.com/thibaultcrn1/permasense-corrosion-app-example](https://github.com/thibaultcrn1/permasense-corrosion-app-example)
-
-
-
-
-
-
-# AngularHelloWorldApp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.0.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
