@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 
 const routes: Routes = [
-  {path: 'hello-world', component: HelloWorldComponent}
+  {path: 'hello-world', component: HelloWorldComponent }
 ];
 
 @NgModule({
