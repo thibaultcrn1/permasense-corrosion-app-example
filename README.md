@@ -42,8 +42,7 @@
    ```
 3. Installer les dépendance.
    ```sh
-   npm i --s @angular/animations @angular/common @angular/compiler @angular/core @angular/forms @angular/platform-browser @angular/platform-browser-dynamic @angular/router rxjs tslib zone.js
-   npm i --s @angular-devkit/build-angular @angular/cli @angular/compiler-cli @types/jasmine @types/node jasmine-core karma karma-chrome-launcher karma-coverage karma-jasmine karma-jasmine-html-reporter typescript
+   npm i
    ```
 4. Démarrer l'app.
    ```sh
