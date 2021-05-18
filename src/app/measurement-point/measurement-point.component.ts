@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MeasurementPointComponent implements OnInit {
 
-  measurement = "1";
+  measurement = "Measurement Point";
 
   constructor() { }
 
