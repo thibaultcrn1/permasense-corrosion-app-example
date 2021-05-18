@@ -1,41 +1,53 @@
-<div class="sidebar">
-  <div class="sidebar-header">
-    <h3 class="brand">
-      <img src="assets/img/logo.png" alt="">
-    </h3>
-    <i class="fas fa-bars"></i>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h3 class="brand">
+        <img src="assets/img/logo.png" alt="">
+      </h3>
+      <i class="fas fa-bars"></i>
+    </div>
+  
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <a routerLink="/">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/hello-world">
+            <i class="fas fa-weight-hanging"></i>
+            <span>Measurement-Point</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/hello-world">
+            <i class="fas fa-globe-americas"></i>
+            <span>Hello World</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Disconnect</span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 
-  <div class="sidebar-menu">
-    <ul>
-      <li>
-        <a routerLink="/">
-          <i class="fas fa-home"></i>
-          <span>Home</span>
-        </a>
-      </li>
-      <li>
-        <a routerLink="/hello-world">
-          <i class="fas fa-weight-hanging"></i>
-          <span>Measurement-Point</span>
-        </a>
-      </li>
-      <li>
-        <a routerLink="/hello-world">
-          <i class="fas fa-globe-americas"></i>
-          <span>Hello World</span>
-        </a>
-      </li>
-      <li>
-        <a routerLink="/">
-          <i class="fas fa-sign-out-alt"></i>
-          <span>Disconnect</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<section id="main-content">
-  <router-outlet></router-outlet>
-</section>
+  <header class="header">
+    <a routerLink="/"><img src="assets/img/plantweb.png" alt="PlantWeb logo"></a>
+    <nav class="header-menu"> 
+      <ul>
+        <li><a routerLink="/"><i class="far fa-bell"></i></a></li>
+        <li><a routerLink="/"><i class="fas fa-sign-out-alt"></i></a></li>
+      </ul>
+    </nav>
+  </header> 
+  
+  <section id="main-content">
+    <router-outlet></router-outlet>
+  </section>
+</body>
