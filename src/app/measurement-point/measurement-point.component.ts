@@ -7,11 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MeasurementPointComponent implements OnInit {
 
-  measurement = "Measurement Point";
+  title = 'Measurement Point';
+  charts = [];
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
