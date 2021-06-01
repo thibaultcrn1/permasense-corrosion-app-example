@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { HttpClientModule } from '@angular/common/http';
 import { ChartsModule } from 'ng2-charts';
  
 import { AppRoutingModule } from './app-routing.module';
@@ -17,7 +18,8 @@ import { MeasurementPointComponent } from './measurement-point/measurement-point
   imports: [
     BrowserModule,
     ChartsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
