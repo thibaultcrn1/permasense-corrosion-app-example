@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 import { Chart } from 'chart.js';
 
 @Component({
@@ -8,9 +9,17 @@ import { Chart } from 'chart.js';
 })
 export class MeasurementPointComponent implements OnInit {
 
-  constructor() { }
+  products = [];
 
+  constructor(private dataService: DataService) { }
+  
   ngOnInit() {
+
+    this.dataService.sendGetRequest().subscribe((data: any) => {
+      console.log(data);
+      this.products = data;
+    })
+
     var myChart = new Chart("myChart", {
       type: 'bar',
       data: {
