@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
 
-  private REST_API_SERVER = "https://www.trackcorona.live/api/countries";
+  private REST_API_SERVER = "https://coronavirusapi-france.vercel.app/AllLiveData";
 
   constructor(private httpClient: HttpClient) { }
 
