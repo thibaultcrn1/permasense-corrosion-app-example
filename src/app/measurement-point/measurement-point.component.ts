@@ -20,13 +20,10 @@ export class MeasurementPointComponent implements OnInit {
   
   ngOnInit() {
 
-    let nord = [];
-
     let gueris = [];
     let deces = [];
     let hospitalises = [];
     let reanimation = [];
-
 
     this.dataService.sendGetRequest().pipe(takeUntil(this.destroy$)).subscribe((data: any) => {
       console.log(data);
@@ -55,52 +52,44 @@ export class MeasurementPointComponent implements OnInit {
       reanimation.push(parseInt(data.allLiveFranceData[16].reanimation));
       console.log(reanimation);
 
+      var myChart = new Chart("myChart", {
+        type: 'line',
+        data: {
+          labels: ['Nord', 'Jura', 'Pas-De-Calais', 'Charente-Maritime'],
+          datasets: [{
+            label: 'Guéris',
+            data: gueris,
+            backgroundColor: 'transparent',
+            borderColor: 'purple',
+            borderWidth: 2
+          },
+          {
+            label: 'Décès',
+            data: deces,
+            backgroundColor: 'transparent',
+            borderColor: 'blue',
+            borderWidth: 2
+          },
+          {
+            label: 'Hospitalisés',
+            data: hospitalises,
+            backgroundColor: 'transparent',
+            borderColor: 'red',
+            borderWidth: 2
+          },
+          {
+            label: 'Réanimation',
+            data: reanimation,
+            backgroundColor: 'transparent',
+            borderColor: 'green',
+            borderWidth: 2
+          },
+          ]
+        },
+      });
+
     })
 
-    var myChart = new Chart("myChart", {
-      type: 'line',
-      data: {
-        labels: ['Nord', 'Jura', 'Pas-De-Calais', 'Charente-Maritime'],
-        datasets: [{
-          label: 'Guéris',
-          data: gueris,
-          backgroundColor: 'transparent',
-          borderColor: 'purple',
-          borderWidth: 2
-        },
-        {
-          label: 'Décès',
-          data: deces,
-          backgroundColor: 'transparent',
-          borderColor: 'blue',
-          borderWidth: 2
-        },
-        {
-          label: 'Hospitalisés',
-          data: hospitalises,
-          backgroundColor: 'transparent',
-          borderColor: 'red',
-          borderWidth: 2
-        },
-        {
-          label: 'Réanimation',
-          data: reanimation,
-          backgroundColor: 'transparent',
-          borderColor: 'green',
-          borderWidth: 2
-        },
-        ]
-      },
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              beginAtZero: true
-            }
-          }]
-        }
-      }
-    });
   }
 
   ngOnDestroy() {
