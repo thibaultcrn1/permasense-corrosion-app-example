@@ -1,0 +1,13 @@
+.divChart {
+    display: block;
+    width: 800px;
+    height: 500px;
+    margin-left: auto;
+    padding-left: 240px;
+    margin-right: auto;
+    margin-top: 15%;
+}
+
+.divChart h1 {
+    text-align: center;
+}
