@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { MeasurementPointComponent } from './measurement-point/measurement-point.component';
+import { GraphComponent } from './graph/graph.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloWorldComponent,
-    MeasurementPointComponent
+    MeasurementPointComponent,
+    GraphComponent
   ],
   imports: [
     BrowserModule,
