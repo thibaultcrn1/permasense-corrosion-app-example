@@ -29,25 +29,25 @@ export class MeasurementPointComponent implements OnInit {
       console.log(data);
 
       gueris.push(parseInt(data.allLiveFranceData[59].gueris));
-      gueris.push(parseInt(data.allLiveFranceData[39].gueris));
+      gueris.push(parseInt(data.allLiveFranceData[76].gueris));
       gueris.push(parseInt(data.allLiveFranceData[62].gueris));
       gueris.push(parseInt(data.allLiveFranceData[16].gueris));
       console.log(gueris);
 
       deces.push(parseInt(data.allLiveFranceData[59].deces));
-      deces.push(parseInt(data.allLiveFranceData[39].deces));
+      deces.push(parseInt(data.allLiveFranceData[76].deces));
       deces.push(parseInt(data.allLiveFranceData[62].deces));
       deces.push(parseInt(data.allLiveFranceData[16].deces));
       console.log(deces);
 
       hospitalises.push(parseInt(data.allLiveFranceData[59].hospitalises));
-      hospitalises.push(parseInt(data.allLiveFranceData[39].hospitalises));
+      hospitalises.push(parseInt(data.allLiveFranceData[76].hospitalises));
       hospitalises.push(parseInt(data.allLiveFranceData[62].hospitalises));
       hospitalises.push(parseInt(data.allLiveFranceData[16].hospitalises));
       console.log(hospitalises);
 
       reanimation.push(parseInt(data.allLiveFranceData[59].reanimation));
-      reanimation.push(parseInt(data.allLiveFranceData[39].reanimation));
+      reanimation.push(parseInt(data.allLiveFranceData[76].reanimation));
       reanimation.push(parseInt(data.allLiveFranceData[62].reanimation));
       reanimation.push(parseInt(data.allLiveFranceData[16].reanimation));
       console.log(reanimation);
@@ -55,7 +55,7 @@ export class MeasurementPointComponent implements OnInit {
       var myChart = new Chart("myChart", {
         type: 'bar',
         data: {
-          labels: ['Nord', 'Jura', 'Pas-De-Calais', 'Charente-Maritime'],
+          labels: ['Nord', 'Seine-Maritime', 'Pas-De-Calais', 'Charente-Maritime'],
           datasets: [{
             label: 'Guéris',
             data: gueris,
