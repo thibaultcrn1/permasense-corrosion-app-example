@@ -53,7 +53,7 @@ export class MeasurementPointComponent implements OnInit {
       console.log(reanimation);
 
       var myChart = new Chart("myChart", {
-        type: 'line',
+        type: 'bar',
         data: {
           labels: ['Nord', 'Jura', 'Pas-De-Calais', 'Charente-Maritime'],
           datasets: [{
